@@ -1,53 +1,70 @@
 /*Nama File : MataKuliah.java */
 /*Deskripsi: berisi atribut dan methods dalam class Mahasiswa */
 /*Pembuat: Christianna Olivia Juniarti Manullang (24060124140168) */
-/*Tanggal: 05 Maret 2026 */
+/*Tanggal: 05 Maret 2026 (Updated: 07 Maret 2026)*/
+/*Lab: C1 */
 
 public class MataKuliah {
     /*********************ATRIBUT*********************/
-    private String idMatkul;
-    private String NamaMatkul;
+    private String idMatKul;
+    private String nama;
     private int sks;
 
-
     /*********************METHOD*********************/
+    /*------------------KONSTRUKTOR-----------------*/
+    // konstruktor MataKuliah tanpa parameter
     public MataKuliah(){
-        this("", "", 0);
+        this.idMatKul = "N/A";
+        this.nama = "N/A";
+        this.sks = 0;
     }
 
-    public MataKuliah(String idMatKul, String NamaMatkul, int sks){
-        this.idMatkul = idMatKul;
-        this.NamaMatkul = NamaMatkul;
+    // konstruktor MataKuliah dengan parameter
+    public MataKuliah(String idMatKul, String nama, int sks){
+        this.idMatKul = idMatKul;
+        this.nama = nama;
         this.sks = sks;
     }
 
-    public String getIdMatkul(){
-        return idMatkul;
+    /*------------------SELEKTOR-------------------*/
+    // mengembalikan idMatKul dari MataKuliah
+    public String getIdMatKul(){
+        return idMatKul;
     }
 
-    public String getNamaMatkul(){
-        return NamaMatkul;
+    // mengembalikan nama dari MataKuliah
+    public String getNama(){
+        return nama;
     }
 
-    public int getSKS(){
+    // mengembalikan sks dari MataKuliah
+    public int getSks(){
         return sks;
     }
-
-    public void setIdMatkul(String idMatkul){
-        this.idMatkul = idMatkul;
+    
+    /*------------------MUTATOR-------------------*/
+    // mengubah isi atribut idMatKul dari MataKuliah
+    public void setIdMatKul(String idMatKul){
+        this.idMatKul = idMatKul;
     }
 
-    public void setNamaMatkul(String NamaMatkul){
-        this.NamaMatkul = NamaMatkul;
+    // mengubah isi atribut nama dari MataKuliah
+    public void setNama(String nama){
+        this.nama = nama;
     }
 
-    public void setsks(int sks){
+    // mengubah isi atribut sks dari MataKuliah
+    public void setSks(int sks){
         this.sks = sks;
     }
 
+    /*------------------LAINNYA-------------------*/
+    // print isi semua atribut dari MataKuliah
     public void printMataKuliah(){
-        System.err.println("Id Mata Kuliah: " + this.idMatkul);
-        System.err.println("Nama MatKul: " + this.NamaMatkul);
+        System.err.println("idMatKul: " + this.idMatKul);
+        System.err.println("Nama MatKul: " + this.nama);
         System.err.println("SKS: " + this.sks);
     }
+
+    // end of class MataKuliah
 }
