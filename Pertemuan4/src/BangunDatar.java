@@ -9,7 +9,7 @@ public class BangunDatar {
     protected int jmlSisi;
     protected String warna;
     protected String border;
-    private static int counterBangunDatar = 0;
+    protected static int counterBangunDatar = 0;
 
     /*********************METHOD*********************/
     /*------------------KONSTRUKTOR-----------------*/

@@ -170,13 +170,5 @@ public class MBangunDatar {
         BangunDatar.printCounterBangunDatar();
         System.err.println();
 
-
-
-        
-
-
-
-
-
     }
 }
