@@ -16,7 +16,6 @@ public abstract class BangunDatar {
     // konstruktor tanpa parameter
     public BangunDatar(){
         counterBangunDatar++;
-
     }
 
     // konstruktor dengan parameter
