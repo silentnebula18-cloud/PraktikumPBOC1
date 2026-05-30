@@ -1,6 +1,6 @@
 /**
  * File : MapList.java
- * Deskirpisi: Implementasi Map pada List, digunakan sebagai parameter pada method
+ * Deskirpisi: Implementasi lambda pada Map, digunakan sebagai parameter pada method
  * Pembuat : Christianna Olivia Juniarti Manullang (24060124140168)
  * Tanggal : 31 Mei 2026
  */
